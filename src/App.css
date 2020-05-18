@@ -1,17 +1,189 @@
-.App {
+/*.App {
   text-align: center;
+  max-width: 100vw;
+}*/
+::-webkit-scrollbar{
+    display: none;
 }
+html{
+  height: 100%;
+  scroll-behavior: smooth;
 
-.App-logo {
+}
+body{
+    background-color: rgb(255, 255, 255);
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
+}*/
+
+*{
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .container{
+  padding: 5%;
 }
+.themed {
+  color: white;
+  background-color: #8D1760;
+}
+.vButton{
+  background-color: #8D1760;
+}
+body{
+  max-width:100vw;
+}
+section{
+  left: 0;
+  right:0;
+
+}
+footer{
+  position: relative;
+  bottom: 0;
+  background-color: #8D1760;
+  color: white;
+  top:10vh;
+}
+#hero{
+  z-index: 0;
+  
+}
+#nav-bar{
+  display: block;
+  position: fixed;
+  height: 10vh;
+  left: 0;
+  right:0;
+  top: 0;
+  background: linear-gradient(to right, #8D1760 50%, #8D1768);
+  color: white;
+}
+#nav-text{
+  line-height: 11vh;
+}
+#hero-body{
+  background-image: url("./images/gradient.png");
+  background-size: 100vw 100vh;
+  background-repeat:no-repeat;
+  color:white;
+  position:relative;
+  height: 90vh;
+  top:10vh;
+  right: 0;
+  left:0;
+  display: inline-block;
+  min-width: 100vw;
+  max-width: 100vw;
+  
+}
+
+#hero-content{
+  background-color:rgba(0,0,0, .65);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top:0;
+  height: 90vh;
+  width: 100vw;
+}
+#hero-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+#hero-text p, #hero-text h1{
+  padding: -10%;
+  margin: 0;
+}
+#hero-text h1{
+ font-size: 70px;
+} */
+/* .paper{
+  /*background-color: #11111111;
+  /* padding: 4%; 
+} */
+
+/* #info{
+  width: 100vw;
+  position: relative;
+  top:10vh;
+  text-align: center;
+  background-color: #11111111;
+  z-index: 10;
+  display: inline-block;
+  color:#8D1760 ;
+  
+}
+p{
+  text-align: justify;
+  margin: auto auto;
+  display: inline-block;
+  color:#8D1760;
+}
+.white{
+  color:white;
+}
+
+#benefits{
+  background-color: #8D1760;
+  color:#8D1760;
+  text-align: justify;
+  position: relative;
+  top:10vh;
+  color:white;
+} */
+
+/* #order{
+  width: 100vw;
+  color:#8D1760;
+  text-align: center;
+  background-color: #11111111;
+  margin: auto auto;
+  position: relative;
+  top:10vh;
+}
+#order p{
+  text-align: justify;
+}
+#order h5{
+  margin:0;
+  padding: 0;
+}
+#order .button{
+  background-color: #8D1760;
+  color:white;
+  cursor: pointer;
+}
+#order .button h4{
+  line-height: inherit;
+  font-size: 2rem;
+}
+
+#order h5{
+  padding: 0;
+}
+
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  width: 70vw;
+  display: inline-block;
+}
+
+
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +207,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */ 
