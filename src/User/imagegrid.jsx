@@ -3,11 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import IconButton from '@material-ui/core/IconButton';
-import InfoIcon from '@material-ui/icons/Info';
-import image from "../images/order.jpg"
-import order from "../images/order.jpg"
+
 import books from '../images/books.jpg';
 import image1 from '../images/plain.jpg';
 import fruits from "../images/fruits.jpg"
@@ -20,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    // justifyContent: 'space-around',
+    justifyContent: 'space-around',
     overflow: 'hidden',
     padding: "5% 0 0 0",
     backgroundColor: theme.palette.background.paper,
@@ -46,6 +42,11 @@ tile:{
       minHeight: "50vh",
       color: "#06B3D0",
       fontSize: "2.3em",
+      padding: "5% 5%",
+      width: "80%",
+      "& img":{
+        
+      },
       "&:hover":{
           
       }

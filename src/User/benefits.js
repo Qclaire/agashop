@@ -1,9 +1,12 @@
 import React from "react"
 import {Grid, Card, CardMedia, CardContent, CardActionArea, Typography,} from "@material-ui/core"
 import {makeStyles} from "@material-ui/styles"
-import bg from "../images/texture.jpg"
+import cheap from "../images/cheap.svg"
 import secure from "../images/secure.svg"
 import convenient from "../images/convenient.svg"
+import delivery from "../images/delivery.svg"
+import safe from "../images/safe.svg"
+import quality from "../images/quality.svg"
 
 const useStyles = makeStyles(theme=>({
 	container:{
@@ -15,11 +18,9 @@ const useStyles = makeStyles(theme=>({
 		color: "white"
 	},
 	icon:{
-		
-		backgroundImage: `url(${secure})`,
 		backgroundSize: "100% 100%",
 		backgroundPosition: "center",
-		height: "200px"
+		height: "200px",
 	},
 	text:{
 		fontSize: "1.3em",
@@ -47,46 +48,35 @@ const Benefits = props=>{
 	const items = 
 	[
 		{
-			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
+			title:"Reliability",
+			image:secure,
+			info:"Agashop finds the best products from sources you can trust at relatively cheaper prices than anyone can get due to our partnership with several suppliers including shopping outlets, producers, distibutors and dealers of all kinds. We idenfy the best option for you everytime"
+		},
+		{
+			title:"Fast Delivery",
+			image:delivery,
+			info:"We boast a ten-hour maximum delievery time even for the most obscure locations within Accra to find and deliver to your door steps. Even products sourced outside Accra should arrive on average 72hrs after order is confirmed. With us you can get the swiftest service available"
 		},
 		{
 			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
+			image:convenient,
+			info:"Agashop offers you the chance to control what you buy online, not what we think you should buy. You decide what you buy and which shop you want to get it from and Agashop does the rest of the work on your behalf. All you have to do is sit back and receive your product!"
 		},
 		{
 			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
+			image:cheap,
+			info:"With our strong partnership with merchants and dealers across the country, we ensure that you get the cheapest prices on the market without compromising quality. We can assure you value of value for money and shield you from the arrows of harsh pricing in the open market"
 		},
 		{
-			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
+			title:"Qaulity Assurance",
+			image:quality,
+			info:"From one year of experience shopping for others, Agashop has developed the eye for quality and originality in our products. We can guarantee that all products dispatched by our agents and partners are genuine and of the highest quality available on the market."
 		},
 		{
-			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
-		},
-		{
-			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
-		},
-		{
-			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
-		},
-		{
-			title:"Flexibility",
-			image:bg,
-			info:"Lorem Sit aspernatur labore vel rem, adipisci commodi odit eum vitae asperiores, esse, ipsum iure cupiditate quibusdam officiis laboriosam neque placeat sint, totam!"
-		},
-		
+			title:"Confidence in shopping",
+			image:safe,
+			info:"When you arrive in an unfamiliar city, it's common for sellers to exploit your vulnerability. That's why we provide safety and reliability by sending you an agent to lead you on your shopping expedition. Our agents are trianed and selected from the local area."
+		},		
 
 	]
 	
@@ -97,13 +87,13 @@ const Benefits = props=>{
 				</Grid>
 								
 				{ items && items.map(obj=>{
-					return <Grid item xs={12} sm={6} lg={3}>
+					return <Grid item xs={12} sm={6} lg={4}>
 					<Grid container direction="row" className={styles.card}>
-						<Grid item xs={12} className={styles.icon}>
+						<Grid item xs={12} className={styles.icon} style={{backgroundImage: `url(${obj.image})`}}>
 							
 						</Grid>
 						<Grid item xs={12} className={styles.text}>
-							<Typography variant="body2">{obj.info}</Typography>
+							<Typography variant="body1">{obj.info}</Typography>
 						</Grid>
 					</Grid>
 				</Grid>

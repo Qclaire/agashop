@@ -3,6 +3,7 @@ import {Grid, Typography, Paper} from "@material-ui/core"
 import {makeStyles} from "@material-ui/styles"
 import icon from "../images/svg.svg"
 
+
 const useStyle = makeStyles(theme=>({
 	about:{
 		backgroundColor: "white",
@@ -61,9 +62,10 @@ const Info =  props =>{
 				
 				<Grid xs={12} sm={6} item className={styles.icon}></Grid>
 				<Grid xs={12} md={6} item className={styles.textContainer}>
-					<Typography variant="p" className={styles.text}>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis pariatur officia unde deserunt laboriosam mollitia et corrupti tempora inventore maiores nam quisquam quam, delectus, magnam recusandae ad eum labore placeat.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro esse id cum vero perspiciatis quas praesentium eos excepturi consequuntur facilis nobis modi ipsa, delectus voluptatibus, sint minus. Sapiente iure, illum!
+					<Typography variant="body1" className={styles.text}>
+							Agashop is a professional proxy shopping and delivery service that specialises in shopping on behalf of our clients. We help our clients identify their their needs
+							then purchase and deliver it for them swiftly. Unlike traditional ecommerce companies, we do not limit our customers to a set of products or shopping centers. Rather,
+							 we offer our clients the flexibility to choose both the product and their preferred shopping centerif they want.
 					</Typography>
 				</Grid>
 			</Grid>
